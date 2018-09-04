@@ -1,0 +1,270 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #fdfdfd;
+}
+
+body a{
+    color: #333;    
+}
+
+body a:hover{
+    text-decoration: none;
+    color: #333;
+}
+
+body a:visited{
+    text-decoration: none;
+}
+
+.headertron{
+    position: relative;
+    z-index: 5;
+}
+
+.prodCard h6{
+    font-size: 14px;
+    display: inline-block;
+}
+
+.cardcontainer{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.cardcontainer .adddiv{
+    position: absolute;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3FC380;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .200s cubic-bezier(.25,.8,.25,1); ;
+}
+
+.cardcontainer .adddiv:hover{
+    transform: scale(1.2);
+}
+
+.adddiv .add {
+    position: relative;
+    margin-top: 23%;
+    margin-left: 28%;
+}
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+}
+ 
+#body {
+    padding:10px;
+    padding-bottom:72px;   /* Height of the footer */
+ }
+
+/* Add a gray background color and some padding to the footer */
+footer {
+    height: 72px;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: fixed;
+    left:0;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.circle{
+    position: relative;
+    top:-6px;  
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    background-color:#d9534f;
+    border-radius: 50%;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow  0.3s cubic-bezier(.25,.8,.25,1);       
+}
+
+.circle:hover{
+    box-shadow: 0 4px 7px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);        
+}
+
+.circle2{
+    position: relative;
+    top:-6px;  
+    cursor: pointer;
+    height: 31px;
+    width: 31px;
+    background-color:#C5EFF7;
+    border-radius: 50%;
+    box-shadow: 0 0px 4px rgba(255,255,255,0.12), 0 1px 2px rgba(255,255,255,0.24);
+    transition: box-shadow  0.3s cubic-bezier(.25,.8,.25,1); 
+}
+
+.circle2:hover{
+    box-shadow: 0 4px 7px rgba(255,255,255,0.25), 0 10px 10px rgba(0,0,0,0.22);        
+}
+
+.filter{
+    z-index: 2;
+    cursor: pointer;
+    position: fixed;
+    height: 35px;
+    width: 35px;
+    background-color:#C5EFF7;
+    border-radius: 50%;
+    opacity: 1;
+    right:20px;
+    top:82px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow  0.3s cubic-bezier(.25,.8,.25,1);       
+}
+
+.filter:hover{
+    box-shadow: 0 4px 7px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);        
+}
+
+.filter_container{
+    border: none;
+    height:100vh;
+    width: 320px;
+    background-color: #fff;
+    position: fixed;
+    right: -320px;
+    top:0;
+    z-index: 1;
+    box-shadow: -8px 0px 18px rgba(0,0,0,0.12); 
+    transition: right  0.3s cubic-bezier(.25,.8,.25,1);     
+}
+
+/* .filter:hover + .filter_container {
+    right: 0px;
+} */
+
+.open{
+    right: 0px;    
+}
+
+.Error{
+    color:red;
+}
+
+.logincont{
+    margin-top:10%;
+}
+
+.card{
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    border-radius:2px; 
+    padding: 25px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.prodCard{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius:2px; 
+    padding: 25px;
+    box-shadow: 0 0px 4px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow  0.3s cubic-bezier(.25,.8,.25,1);   
+}
+
+.prodCard:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
+}
+
+.card h2{
+    margin-top:10px;
+}
+
+.card div{
+    margin-top:30px;
+}
+
+.card a{
+    color: #333;
+    transition: color .200s ease;
+    text-decoration: none;
+}
+
+.card a:hover{
+    color: #9d9d9d;
+}
+
+.logindiv{
+    width: 20%;
+    margin: auto;
+}
+
+.signupBack{
+    color: #333;
+    transition: color .200s ease;
+    text-decoration: none;
+    position: absolute;
+    margin-left: -20%;
+    margin-top: 10px;
+}
+
+.signupBack:hover{
+    color: #9d9d9d;    
+}
+
+.detailsdiv h4{
+    display: inline-block;
+}
+
+.cartul h5{
+    display: inline;
+    margin-right: 20%;
+}
+
+.accountul h5{
+    display: inline;
+    margin-right: 20%;
+}
+
+.accountul li{
+    cursor: pointer;
+}
+
+.accountul li:hover{
+    background-color: #f2f2f2;
+}
+
+.filter-group{
+    padding-top:14px;
+}
+
+.dropdown{
+    background-color: #f2f2f2;
+    overflow: auto;
+    height:0px; 
+    transition: height 0.3s cubic-bezier(.25,.8,.25,1);       
+}
+
+.opendrop{
+    height: 200px;
+}
+
+#header{
+    background-color: #333;
+}
+
+#header h5{
+    color: #fff;
+}
+
+#header:hover{
+    background-color: #333;
+}
